@@ -1,8 +1,12 @@
+:root{
+	--main-color: blue;
+}
+
 .test {
     background: black;
 }
 
 .autoprefixer {
   display: flex;
-  color: red;
+  color: var(--main-color);
 }

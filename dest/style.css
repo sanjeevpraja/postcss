@@ -1,10 +1,8 @@
 .test {
-    background: black;
-}
+  background: black; }
 
 .autoprefixer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: red;
-}
+  color: blue; }
