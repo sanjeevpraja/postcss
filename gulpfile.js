@@ -4,7 +4,9 @@ var sass = require('gulp-sass');
 var autoprefixer = require('autoprefixer');
 var cssnext = require('cssnext');
 var precss = require('precss');
-var cssnext = require('cssnext');
+var less = require('gulp-less');
+var sourcemaps = require('gulp-sourcemaps');
+var postcsseach = require('postcss-each');
 
 
 gulp.task('css', function () {
@@ -12,12 +14,13 @@ gulp.task('css', function () {
 	autoprefixer,
 	cssnext,
 	precss,
-	cssnext({})
+	postcsseach
 	];
 
 	return gulp.src('./src/*.scss')
-	.pipe(sass())
 	.pipe(postcss(processors))
+	.pipe(sass())
+	.pipe( sourcemaps.write('.') )
 	.pipe(gulp.dest('./dest'));
 });
 

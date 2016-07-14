@@ -5,4 +5,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: blue; }
+  color: green; }
+
+.icon-foot {
+  background: url("icons/foot.png"); }
+
+.icon-bar {
+  background: url("icons/bar.png"); }
+
+.icon-baz {
+  background: url("icons/baz.png"); }

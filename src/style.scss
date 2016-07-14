@@ -1,5 +1,5 @@
 :root{
-	--main-color: blue;
+	--main-color: green;
 }
 
 .test {
@@ -9,4 +9,10 @@
 .autoprefixer {
   display: flex;
   color: var(--main-color);
+}
+
+@each $icon in foot, bar, baz {
+  .icon-$(icon) {
+    background: url('icons/$(icon).png');
+  }
 }
